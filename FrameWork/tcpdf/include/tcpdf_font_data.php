@@ -4,7 +4,7 @@
 // Version     : 1.0.001
 // Begin       : 2008-01-01
 // Last Update : 2013-04-01
-// Author      : Nicola Asuni - Tecnick.com LTD - www.tecnick.com - info@tecnick.com
+// Author      :Peter Jambor From an Nicola Asuni Project
 // License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
 // -------------------------------------------------------------------
 // Copyright (C) 2008-2013 Nicola Asuni - Tecnick.com LTD

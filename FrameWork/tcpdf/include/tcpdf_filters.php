@@ -4,10 +4,10 @@
 // Version     : 1.0.001
 // Begin       : 2011-05-23
 // Last Update : 2013-09-15
-// Author      : Nicola Asuni - Tecnick.com LTD - www.tecnick.com - info@tecnick.com
+// Author      :Peter Jambor From an Nicola Asuni Project
 // License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
 // -------------------------------------------------------------------
-// Copyright (C) 2011-2013 Nicola Asuni - Tecnick.com LTD
+// Copyright (C) 2011-2015
 //
 // This file is part of TCPDF software library.
 //
