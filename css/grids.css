@@ -1,0 +1,106 @@
+.sales_rep_grid{
+    margin:5px;
+    width:99%;
+}
+
+.gridHead{
+    background-color: #263138;
+    color: white;
+    font-weight:bold;
+    text-align: center;
+    cursor:pointer;
+}
+.gridRow{
+    cursor:pointer;
+}
+.gridHead_First_col{
+    padding:7px;
+    text-align: left;
+    width:10%;
+    border-right:1px white solid;
+    border-left:1px white solid;
+}
+.gridHead_col_1{
+    padding:7px;
+    text-align: center;
+    width:35%;
+    border-right:1px white solid;
+}
+.gridHead_col_2{
+    padding:7px;
+    text-align: center;
+    width:35%;
+    border-right:1px white solid;
+}
+.gridHead_Last_col{
+    padding:7px;
+    text-align: center;
+    width:20%;
+    border-left:1px white solid;
+}
+
+.gridCell_align_Left{
+    padding:3px;
+    border-left: 1px dotted #CCCCCC;
+    border-right: 1px dotted #CCCCCC;
+    border-bottom: 1px dotted #263138; 
+    text-align: left;
+}
+.gridCell_align_Right{
+    padding:3px;
+    border-left: 1px dotted #CCCCCC;
+    border-right: 1px dotted #CCCCCC;
+    border-bottom: 1px dotted #263138; 
+    text-align: right;
+}
+.gridCell_align_Center{
+    padding:3px;
+    border-left: 1px dotted #CCCCCC;
+    border-right: 1px dotted #CCCCCC;
+   border-bottom: 1px dotted #263138; 
+    text-align: center;
+}
+
+.gridCellLeft_align_Left{
+    padding:3px;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px dotted #CCCCCC;
+    border-bottom: 1px dotted #263138; 
+    text-align: left;
+}
+.gridCellLeft_align_Right{
+    padding:3px;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px dotted #CCCCCC;
+    border-bottom: 1px dotted #263138; 
+    text-align: right;
+}
+.gridCellLeft_align_Center{
+    padding:3px;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px dotted #CCCCCC;
+    border-bottom: 1px dotted #263138; 
+    text-align: center;
+}
+
+.gridCellRight_align_Left{
+    padding:3px;
+    border-left: 1px dotted #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px dotted #263138; 
+    text-align: left;
+}
+.gridCellRight_align_Right{
+    padding:3px;
+    border-left: 1px dotted #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px dotted #263138; 
+    text-align: right;
+}
+.gridCellRight_align_Center{
+    padding:3px;
+    border-left: 1px dotted #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px dotted #263138; 
+    text-align: center;
+}
