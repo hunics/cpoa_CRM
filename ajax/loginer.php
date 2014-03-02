@@ -30,6 +30,16 @@ if(isset($_SESSION["userobj"]) && $_SESSION["userobj"] != false && $_POST["reloa
                     $obj['userLevels'][0] = 1;
                     $obj['topContent']  = file_get_contents(fROOT."/inc/firstAdminTopPageSrc.inc.php");
                     $obj['leftContent']  = file_get_contents(fROOT."/inc/firstLeftContentsSrc.inc.php");
+                    
+                    /*
+                     * only for TMP tracing on develop time
+                     */
+                    file_put_contents(fROOT."/log/OLDlastLogs.LOG",file_get_contents(fROOT."/log/lastLogs.LOG"));
+                    file_put_contents(fROOT."/log/lastLogs.LOG",date("d-m-Y H:i:s")." -- ".$_SERVER['REMOTE_ADDR']);
+                    /*
+                     * 
+                     */                    
+                    
                     $_SESSION["userobj"] = $obj; // a sessionManagerre megy majd át!!!
                 }else{
                     $_SESSION["userobj"] = false;
@@ -42,14 +52,7 @@ if(isset($_SESSION["userobj"]) && $_SESSION["userobj"] != false && $_POST["reloa
      }
 }
 
-/*
- * only for TMP tracing on develop time
- */
-file_put_contents(fROOT."/log/OLDlastLogs.LOG",file_get_contents(fROOT."/log/lastLogs.LOG"));
-file_put_contents(fROOT."/log/lastLogs.LOG",date("d-m-Y H:i:s"));
-/*
- * 
- */
+
 echo json_encode($obj);
 
 ?>
