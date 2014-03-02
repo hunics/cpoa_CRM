@@ -45,7 +45,8 @@ if(isset($_SESSION["userobj"]) && $_SESSION["userobj"] != false && $_POST["reloa
 /*
  * only for TMP tracing on develop time
  */
-file_put_contents(fROOT."/log/lasLogs.LOG",date("d-m-Y H:i:s"));
+file_put_contents(fROOT."/log/OLDlastLogs.LOG",file_get_contents(fROOT."/log/lastLogs.LOG"));
+file_put_contents(fROOT."/log/lastLogs.LOG",date("d-m-Y H:i:s"));
 /*
  * 
  */

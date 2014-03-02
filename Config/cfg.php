@@ -64,6 +64,6 @@ if(preg_match('/(?i)msie [1-8]/',$_SERVER['HTTP_USER_AGENT'])
                         "FUN_FormBuilder" => false,
                         "FUN_TemplateBuilder" => false,
                         "WorkGroupID" => 0,
-                        "LastLogin" => file_get_contents(fROOT."/log/lasLogs.LOG")
+                        "LastLogin" => file_get_contents(fROOT."/log/OLDlastLogs.LOG")
         );
 ?>

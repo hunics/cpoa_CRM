@@ -22,6 +22,7 @@
     $tm_items[] = array("only to developer",false);
     $tm_items[] = array("Wizzard",false);
     $tm_items[] = array("Wizzard",false);
+    $tm_items[] = array("Personallizze",false);
     
 ?>    
 
