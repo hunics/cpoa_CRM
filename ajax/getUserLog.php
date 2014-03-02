@@ -19,6 +19,9 @@ foreach($userPermissos as $key=>$value){
     if($vu == false){
         $vu = "<font color='red'><i>FALSE</i></font>";
     }
+    if($vu === true){
+        $vu = "TRUE";
+    }
     $logArrayJSONobject["logArrya"][] = array($i,$key,$vu,"readOnly");
     $i++;
 }

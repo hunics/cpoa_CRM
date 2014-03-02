@@ -4,7 +4,7 @@ include_once("../Config/cfg.php");
 <table id='userProperties_grid' class='sales_rep_grid' cellspacing='0' cellpadding='0'>
     <tr id="gridHead" class="gridHead">
         <th id="gridHead_col_0" class="gridHead_First_col">#</th>
-        <th id="gridHead_col_1" class="gridHead_col_1">Properies</th>
+        <th id="gridHead_col_1" class="gridHead_col_1">Properties</th>
         <th id="gridHead_col_2" class="gridHead_col_2">Value</th>
         <th id="gridHead_col_3" class="gridHead_Last_col">Activated</th>
     </tr>
