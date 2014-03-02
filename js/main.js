@@ -242,8 +242,8 @@ function loadUser(obj){
             }
         );
 
-
-    alert(obj.userLevels.toString());
+    // Only for Developer info    
+    $("#gridCell_row_1__col_2").html(obj.userLevels.toString());
     
 }
 

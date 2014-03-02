@@ -10,7 +10,7 @@ if(preg_match('/(?i)msie [1-8]/',$_SERVER['HTTP_USER_AGENT'])
 }
     $title = "jpCRM_CPOA";
     
-    define("TIMEZONE_IDENTIFIER", "UTC") ;
+    define("TIMEZONE_IDENTIFIER", "America/Cancun") ;
     define("fROOT",$_SERVER['DOCUMENT_ROOT']."/cpoa" ); 
     define("hROOT", "/cpoa") ;
     
@@ -47,5 +47,23 @@ if(preg_match('/(?i)msie [1-8]/',$_SERVER['HTTP_USER_AGENT'])
             $this->DB_Name = "cpoa_dbo";//peticom_CPOA" ;
         }
     }    
-    
+
+    $userPermissos = array("BasicLogin" => true,
+                        "ManageSelfProfil" => false,
+                        "isSALSEREP" => false,
+                        "isREFERRALREP"=> false,
+                        "isCLIENT" => false,
+                        "isADMIN" => false,
+                        "isCUSTOMERSERVICE" => false,
+                        "isFINANCIAL" => false,
+                        "isTELEMARKETER" => false,
+                        "isPROSPECTS" => false,
+                        "isACADEMIES" => false,
+                        "isCOACHES" => false,
+                        "isSYSTEMADMIN" => false,
+                        "FUN_FormBuilder" => false,
+                        "FUN_TemplateBuilder" => false,
+                        "WorkGroupID" => 0,
+                        "LastLogin" => file_get_contents(fROOT."/log/lasLogs.LOG")
+        );
 ?>

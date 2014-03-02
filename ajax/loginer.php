@@ -41,6 +41,14 @@ if(isset($_SESSION["userobj"]) && $_SESSION["userobj"] != false && $_POST["reloa
         }        
      }
 }
+
+/*
+ * only for TMP tracing on develop time
+ */
+file_put_contents(fROOT."/log/lasLogs.LOG",date("d-m-Y H:i:s"));
+/*
+ * 
+ */
 echo json_encode($obj);
 
 ?>
