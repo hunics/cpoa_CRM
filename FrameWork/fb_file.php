@@ -74,20 +74,31 @@ function resizeImg($nvxv){
 			$_size = $_FILES['file']['size'];
 			$_filename=trim($_FILES['file']['name']);
 			$xNary = get_ext($_filename);
-
+                        
+                        echo $_filename;
+                        
 			if($_size > $_max_file_size || !in_array($xNary,$_permited_types) ){
 				$bb0f =" style='background-color:red; padding:0px;'";
 				$vanHiba = true;	
 			}	
 			if($vanHiba == false){	
+                            echo $_filename;
+                        
 					/*
 					UPLOAD non obligatorio
 					*/
 					if($_POST["img_id"] !="none"){
 						$nvxv = $_upload_dir."/".$_POST["img_id"];//.".".$xNary;
-					}else{
-						$nvxv =  $_upload_dir."/".(string)time()."_".(string)rand(1,1000)."_".$_filename;	
-					}
+                                                echo $_filename;
+                        
+                                                
+                                        }else{
+                                            echo $_filename;
+                                            $nvxv = $_upload_dir."/".(string)time()."_".(string)rand(1,1000)."_".$_filename;	
+					
+                                                
+                                        }
+                                        echo $nvxv;
 					copy($_FILES['file']['tmp_name'],$nvxv);
 					if($_max_img_width_array ){ resizeImg($nvxv);}
 					
