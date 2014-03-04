@@ -103,8 +103,8 @@ function resizeImg($nvxv){
 		}			
 	}
 ?>
-
-<div class="fb_fieldset" <?php echo $bb0f; ?> >
+<form method="post"  enctype="multipart/form-data">
+    <div class="fb_fieldset" <?php echo $bb0f; ?> >
 	<label for="file" class="fb_fieldset_label">
 		<?php echo $_fupd_Label;
 			    echo $_oblig_setting; 
@@ -117,8 +117,9 @@ function resizeImg($nvxv){
 		<input type="hidden" value="<?php echo $_img_id;?>" id = "<?php echo $_img_id;?>" name="img_id">
 	</div>
 	<br>
-</div>
-
+        <input type="submit" value="test">
+    </div>
+</form>
 
 
 <?php
