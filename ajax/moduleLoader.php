@@ -59,13 +59,13 @@
     elseif($pmiI=="6"){
         $template.="/cpoa/templates/reportsAllGrid.php";
         $html.= file_get_contents($template);
-    }    
+    }elseif($pmiI=="10" || $pmiI=="11"  ||$pmiI=="12" ||$pmiI=="13"){
+        
+        $html = "<h3 style='padding:10px;'>THIS MODULE IS DISABLED for this user</h3>"; 
     
-    elseif($pmiI=="14"){
+    }elseif($pmiI=="14"){
         $template.="/cpoa/templates/mailingBasicGrid.php";
         $html.= file_get_contents($template);
-    
-        
     }elseif($pmiI=="15"){
         $template.="/cpoa/templates/userHomeGrid.php";
         $html.= file_get_contents($template);
